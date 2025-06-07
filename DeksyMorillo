@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestría en Poker: Tu Ruta Impactante</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f8ff; /* AliceBlue, very light */
+        }
+        .text-gradient-purple-blue {
+            background-image: linear-gradient(to right, #8b5cf6, #6366f1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .shadow-glow-purple {
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.4), 0 0 30px rgba(139, 92, 246, 0.2);
+        }
+        .shadow-glow-indigo {
+            box-shadow: 0 0 15px rgba(99, 102, 241, 0.4), 0 0 30px rgba(99, 102, 241, 0.2);
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 350px; /* Adjusted for visual impact within the card */
+            margin-left: auto;
+            margin-right: auto;
+            height: 250px;
+            max-height: 30vh;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 280px;
+                max-height: none;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <div class="container mx-auto p-4 sm:p-8 lg:p-12 max-w-7xl">
+
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-gradient-purple-blue mb-4">
+                Cursos Poker para Todos: Cash Game <span class="text-purple-600">VS</span> MTT
+            </h1>
+            <p class="text-2xl md:text-3xl font-light text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
+                Elige tu camino o fusiona tu poder: La maestría te espera.
+            </p>
+            <a href="https://www.facebook.com/groups/2416740561905331" target="_blank" class="inline-block p-4 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                <span class="text-white text-5xl md:text-6xl">👥</span>
+                <span class="block text-white text-lg md:text-xl font-bold mt-2">Únete a la Comunidad</span>
+            </a>
+        </header>
+
+        <main>
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-20">
+                
+                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border-t-8 border-indigo-600 flex flex-col items-center justify-between h-full transform hover:scale-[1.02] transition-transform duration-300 shadow-glow-indigo">
+                    <div class="mb-8 text-center">
+                        <span class="block text-8xl md:text-9xl text-indigo-700 mb-6 transform rotate-6">💰</span>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-indigo-800 leading-tight flex items-center justify-center">
+                            <span class="mr-4 bg-indigo-600 text-white rounded-full h-10 w-10 flex items-center justify-center text-xl font-bold shadow-md">1</span>
+                            Cash Game
+                        </h2>
+                        <p class="text-xl text-gray-600 mt-3">
+                            La Consistencia es Rey.
+                        </p>
+                    </div>
+                    
+                    <p class="text-gray-700 text-lg mb-6 text-center">
+                        Descubre el perfil de habilidades que te hará brillar en las mesas de Cash Game.
+                    </p>
+                    <div class="w-full flex-grow flex items-center justify-center mb-8">
+                        <div class="chart-container">
+                            <canvas id="cashGameSkillsChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <ul class="w-full space-y-6 text-gray-800 text-xl md:text-2xl font-semibold text-center">
+                        <li class="flex items-center justify-center p-3 bg-indigo-50 rounded-full shadow-md">
+                            <span class="text-3xl mr-4">🔄</span> Flexibilidad Infinita
+                        </li>
+                        <li class="flex items-center justify-center p-3 bg-indigo-50 rounded-full shadow-md">
+                            <span class="text-3xl mr-4">📈</span> Crecimiento Escalable
+                        </li>
+                        <li class="flex items-center justify-center p-3 bg-indigo-50 rounded-full shadow-md">
+                            <span class="text-3xl mr-4">🧠</span> Mente de Acero
+                        </li>
+                        <li class="flex items-center justify-center p-3 bg-indigo-50 rounded-full shadow-md">
+                            <span class="text-3xl mr-4">🔍</span> Análisis Experto
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border-t-8 border-purple-600 flex flex-col items-center justify-between h-full transform hover:scale-[1.02] transition-transform duration-300 shadow-glow-purple">
+                    <div class="mb-8 text-center">
+                        <span class="block text-8xl md:text-9xl text-purple-700 mb-6 transform -rotate-6">🏆</span>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-purple-800 leading-tight flex items-center justify-center">
+                            <span class="mr-4 bg-purple-600 text-white rounded-full h-10 w-10 flex items-center justify-center text-xl font-bold shadow-md">2</span>
+                            Torneos MTT
+                        </h2>
+                        <p class="text-xl text-gray-600 mt-3">
+                            La Gloria te Espera.
+                        </p>
+                    </div>
+                    
+                    <p class="text-gray-700 text-lg mb-6 text-center">
+                        Explora el perfil de habilidades necesario para ser un campeón en los Torneos Multi-Mesa.
+                    </p>
+                    <div class="w-full flex-grow flex items-center justify-center mb-8">
+                        <div class="chart-container">
+                            <canvas id="mttSkillsChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <ul class="w-full space-y-6 text-gray-800 text-xl md:text-2xl font-semibold text-center">
+                        <li class="flex items-center justify-center p-3 bg-purple-50 rounded-full shadow-md">
+                            <span class="text-3xl mr-4">💥</span> Premios Explosivos
+                        </li>
+                        <li class="flex items-center justify-center p-3 bg-purple-50 rounded-full shadow-md">
+                            <span class="text-3xl mr-4">🧘‍♀️</span> Resistencia Épica
+                        </li>
+                        <li class="flex items-center justify-center p-3 bg-purple-50 rounded-full shadow-md">
+                            <span class="text-3xl mr-4">🎢</span> Varianza Maestra
+                        </li>
+                        <li class="flex items-center justify-center p-3 bg-purple-50 rounded-full shadow-md">
+                            <span class="text-3xl mr-4">🎯</span> Estrategia por Fases
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="text-center p-10 md:p-16 bg-gradient-to-r from-blue-600 to-purple-700 rounded-3xl shadow-2xl text-white transform hover:scale-[1.01] transition-transform duration-300">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+                    Tu Camino hacia la Maestría
+                </h2>
+                <p class="text-xl md:text-2xl max-w-4xl mx-auto mb-8 font-light leading-relaxed">
+                    Cada modalidad forja habilidades únicas. Domina una, o fusiona sus poderes para una ventaja incomparable.
+                    ¡Y no estás solo! **Elige tu camino (1 o 2) y cuenta con el equipo de apoyo de METAPOKER** para guiarte en cada paso de tu proyecto de aprendizaje.
+                </p>
+                <a href="https://wa.link/blpg33" target="_blank" class="inline-block px-10 py-4 bg-white text-blue-700 font-bold text-xl rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer no-underline">
+                    ¡Empieza Tu Viaje Ahora! 🚀
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const skillLabels = ['Técnico', 'Mental', 'Volumen'];
+
+        const cashGameSkillData = {
+            labels: skillLabels,
+            datasets: [{
+                label: 'Perfil de Habilidades',
+                data: [9, 8, 8], /* Técnico, Mental, Volumen para Cash Game de Maestría */
+                backgroundColor: 'rgba(99, 102, 241, 0.2)', /* indigo-500 with opacity */
+                borderColor: 'rgba(99, 102, 241, 1)',   /* indigo-500 */
+                borderWidth: 2,
+                pointBackgroundColor: 'rgba(99, 102, 241, 1)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgba(99, 102, 241, 1)'
+            }]
+        };
+
+        const mttSkillData = {
+            labels: skillLabels,
+            datasets: [{
+                label: 'Perfil de Habilidades',
+                data: [9, 9, 8], /* Técnico, Mental, Volumen para MTT de Maestría */
+                backgroundColor: 'rgba(139, 92, 246, 0.2)', /* purple-500 with opacity */
+                borderColor: 'rgba(139, 92, 246, 1)',   /* purple-500 */
+                borderWidth: 2,
+                pointBackgroundColor: 'rgba(139, 92, 246, 1)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgba(139, 92, 246, 1)'
+            }]
+        };
+
+        const chartOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+            scales: {
+                r: {
+                    angleLines: { color: 'rgba(0, 0, 0, 0.1)' },
+                    grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                    pointLabels: {
+                        font: { size: 14, weight: '600' },
+                        color: '#374151' /* gray-700 */
+                    },
+                    ticks: {
+                        backdropColor: 'rgba(255, 255, 255, 0.75)',
+                        stepSize: 2,
+                        font: { size: 10 }
+                    },
+                    min: 0,
+                    max: 10
+                }
+            },
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cashCtx = document.getElementById('cashGameSkillsChart').getContext('2d');
+            new Chart(cashCtx, { type: 'radar', data: cashGameSkillData, options: chartOptions });
+
+            const mttCtx = document.getElementById('mttSkillsChart').getContext('2d');
+            new Chart(mttCtx, { type: 'radar', data: mttSkillData, options: chartOptions });
+        });
+    </script>
+
+</body>
+</html>
